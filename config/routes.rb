@@ -3,10 +3,8 @@ Rails.application.routes.draw do
   get 'pages/home', to: 'pages#home'
   get 'pages/about', to: 'pages#about'
  
-  get '/recipes', to: 'recipes#index'
-  get '/recipes/:id', to: 'recipes#show', as: 'recipe'
- 
-#  resources :recipes 
+  resources :recipes 
+  #resources chef
 #  get "recipes", to: "recipes#index"
 #  get "recipes/new", to: "recipes#new"
 end

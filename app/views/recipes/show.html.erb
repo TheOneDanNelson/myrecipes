@@ -2,10 +2,10 @@
 <div class="well col-md-8 col-md-offset-2">
   <h4 class="center description">
     <strong>Steps:</strong>
-    <hr />
-    <%= simple_format(@recipe.description) %>
-    <hr />
   </h4>
+  <hr />
+  <%= simple_format(@recipe.description) %>
+  <hr />
   <div class="pull-right">
     <p class="center"><em>Created by:</em></p>
     <p class="center"><%= link_to gravatar_for(@recipe.chef), recipes_path %></p>

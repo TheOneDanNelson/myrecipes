@@ -13,7 +13,7 @@ class RecipesDeleteTest < ActionDispatch::IntegrationTest
     assert_difference 'Recipe.count', -1 do
       delete recipe_path(@recipe)
     end
-    assert_redirected_to "recipe_path"
+    assert_redirected_to recipes_path
     assert_not flash.empty?
   end
 
